@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h2>CRUD</h2>
+        <a href="index.html" class="cerrar">Log out</a>
+    </div>
+    <div class="crud-container">
+        <button class="add-new" id="addnew">+</button>
+
+        <div class="entry-container" id="entry">
+            <h2>entry </h2>
+            <form action="#" id="id-form">
+                <input type="text" id="fullname" placeholder="Nombre">
+                <input type="text" id="ci" placeholder="CI">
+                <input type="text" id="career" placeholder="Carrera">
+                <input type="text" id="materia" placeholder="Materia">
+                <input type="text" id="notas" placeholder="Notas">
+                <input type="text" id="asis" placeholder="asis">
+
+                <button type="submit" id="add" class="add-button">Add</button>
+            </form>
+        </div>
+            <table id="list" class="students-table">
+                <thead>
+                    <tr class="title-list">
+                        <th>Nombre</th>
+                        <th>C.I</th>
+                        <th>Carrera</th>
+                        <th>Materia</th>
+                        <th>Notas</th>
+                        <th>Asistencias</th>
+                        <th>EDITAR ELIMINAR</th>
+                    </tr>
+                </thead>
+                <tbody class="students-list">
+                </tbody>
+            </table>
+    </div>
+
+    <div class="notas-container" id="notascontainer">
+        <button type="button" id="salirnotas"></button>
+        <p class="titulo-materia" id="titulomateria"></p>
+        <input class="añadirnuevocorte" id="nuevocorte" placeholder="cantidad de cortes">
+        <button type="submit" id="cortesboton" class="cortes-boton">Crear</button>
+        <div id="cortes">
+
+        </div>
+    </div>
+<script src="main.js"></script>
+
+</body>
+</html>
